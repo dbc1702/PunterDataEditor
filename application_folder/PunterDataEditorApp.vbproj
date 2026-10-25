@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>PunterDataEditorApp</RootNamespace>
+    <StartupObject>PunterDataEditorApp.Program</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- CSV dataset (read-only source data) -->
+    <None Include="..\data\dogs_dataset.csv" Link="data\dogs_dataset.csv" />
+    
+    <!-- Screenshots folder for design reference -->
+    <None Include="..\data\screenshots\**\*" 
+          LinkBase="data\screenshots\" />
+          
+    <!-- Dog images for record view display -->
+    <None Include="..\data\images\**\*" 
+          LinkBase="data\images\" />
+  </ItemGroup>
+
+</Project>

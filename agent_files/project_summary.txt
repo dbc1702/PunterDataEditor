@@ -1,0 +1,75 @@
+# Punter Data Editor — Project Brief and Working Instructions
+
+## Project overview
+
+**Project name:** Punter Data Editor  
+**Project type:** Windows Forms desktop application  
+**Language:** VB.NET only  
+**Framework:** .NET 8  
+**IDE:** Visual Studio 2026  
+**Project root:** `X:\ai\Projects\Punter Data Editor`
+
+This application edits and displays the CSV dataset used by the external game *Greyhound Punter 2026*.
+
+## Project files and data
+
+- **Dataset format:** CSV
+- **Dataset filename:** `dog_dataset.csv`
+- **Dataset directory:** `data\`
+- **Project memory file:** `agent_files\claude.md`
+- **Reference screenshots:** `data\screenshots\`
+- **VB.Net project folder where to start creating the project for me to edit in vs2026:**  `application_folder`
+
+Use the screenshots as visual guidance for the record view. They show the kind of player-attribute layout used in management simulator games such as *Football Manager* and *Championship Manager*.
+
+## Intended application
+
+The main window will display the dataset’s `DogName` values in a list. Double-clicking a name will open a record view for that dog.
+
+The record view should present the dog’s attributes in a style inspired by the supplied screenshots. Attribute values should be easy to scan, using either:
+
+- A progress-bar style display, or
+- A five-star rating display.
+
+Choose the display that best fits the design, and keep it consistent across attributes unless there is a clear reason to vary it.
+
+### Attribute scale
+
+Dataset attributes are generally between 1 and 100. The game converts these values to a 1–20 scale by dividing by 5 and rounding down.
+
+Examples:
+
+- `TopSpeed = 100` → in-game value `20`
+- `Agility = 76` → in-game value `15` (`76 / 5 = 15.2`, rounded down)
+
+If an attribute is shown using five stars, calculate the rating by integer division by 20, equivalent to dividing by 5 and converting the resulting 1–20 value to a five-star display. Keep the original dataset value available wherever exact values matter. Do not silently replace or alter stored CSV values just to display a rating.
+
+## Mandatory project rules
+
+1. **Use VB.NET only.** Do not use C#, C++, or another programming language for application code.
+2. **Work in small, reviewable steps.** Make focused changes, ideally one file at a time. Avoid implementing large sections of the application in one pass.
+3. **Preserve existing code when fixing bugs.** Make the smallest targeted correction that resolves the issue. Do not rewrite an entire file unless a rewrite is genuinely necessary and the user has agreed to it.
+4. **Build Windows Forms layouts in the Visual Studio Designer.** Forms, controls, and their layout must be visible and editable in the designer. Do not create the form’s main controls at runtime in code. Use the appropriate `.Designer.vb` file and related designer resources as Visual Studio expects.
+5. **Document code blocks.** Add a concise description to each function, `Sub`, or meaningful code block, explaining:
+   - What it does
+   - How it works
+   - What calls it, when applicable
+6. **Maintain project memory.** Update `agent_files\claude.md` regularly and quietly with the project’s current state, completed work, important decisions, and next steps. Keep it concise and useful for future work.
+7. **Keep progress updates brief.** The user does not need a full dump of generated code. Provide a short summary of the current task, its outcome, and whether it is complete.
+
+## Recommended workflow
+
+For each task:
+
+1. Read `agent_files\claude.md` and inspect the relevant project files before making changes.
+2. Check the supplied screenshots when working on the record-view layout.
+3. State the small, specific change being made.
+4. Implement that change without disturbing unrelated code.
+5. Review the result for consistency with the existing project and these instructions.
+6. Build or run the application when appropriate to confirm the change works.
+7. Update `agent_files\claude.md` with the outcome and the next useful step.
+8. Report completion with a concise synopsis. Include any unresolved issue that prevents the task from being complete.
+
+## Working principle
+
+Treat the CSV as the game’s source data. Preserve its existing values and structure unless the user explicitly requests a data change. Keep display calculations separate from stored data.

@@ -1,0 +1,14 @@
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.GeneratedMSBuildEditorConfig.editorconfig
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.AssemblyInfoInputs.cache
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.AssemblyInfo.vb
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.vbproj.CoreCompileInputs.cache
+X:\ai\Projects\Punter Data Editor\application_folder\bin\Debug\net8.0-windows\PunterDataEditorApp.exe
+X:\ai\Projects\Punter Data Editor\application_folder\bin\Debug\net8.0-windows\PunterDataEditorApp.deps.json
+X:\ai\Projects\Punter Data Editor\application_folder\bin\Debug\net8.0-windows\PunterDataEditorApp.runtimeconfig.json
+X:\ai\Projects\Punter Data Editor\application_folder\bin\Debug\net8.0-windows\PunterDataEditorApp.dll
+X:\ai\Projects\Punter Data Editor\application_folder\bin\Debug\net8.0-windows\PunterDataEditorApp.pdb
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.dll
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\refint\PunterDataEditorApp.dll
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.pdb
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\PunterDataEditorApp.genruntimeconfig.cache
+X:\ai\Projects\Punter Data Editor\application_folder\obj\Debug\net8.0-windows\ref\PunterDataEditorApp.dll

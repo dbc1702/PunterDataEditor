@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/application_folder/">
+    <Project Path="application_folder/PunterDataEditorApp.vbproj" />
+  </Folder>
+</Solution>
